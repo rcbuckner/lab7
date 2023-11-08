@@ -16,7 +16,7 @@ public class ReplyReceiver extends BroadcastReceiver {
 
         if (remoteInput != null) {
             CharSequence charSequence = remoteInput.getCharSequence(NotificationHelper.TEXT_REPLY);
-            if (charSequence != null) {
+            if (charSequence == null) {
                 return;
             }
 
